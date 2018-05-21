@@ -446,3 +446,17 @@ Depois de encontrar o commit com problema, para retornar para o *HEAD* utilize:
 
 Sinta-se a vontade para realizar adicionar mais informações ou realizar correções. Fork me!
 
+COMANDOS FABIANO
+
+git remote add localteste root@192.168.88.250:/GIT/teste
+git push localteste
+
+Push em tags e remoção
+
+Muitas vezes você simplesmente precisa criar uma tag e depois dar push na mesma no repositório remoto (github por exemplo).
+Nesse caso, para que as tags sejam enviadas, utilize o comando:
+git push origin master --tags
+Agora se você quiser remover as tags criadas, utilize os comandos abaixo:
+git tag -d 0.1.0  (removendo tag localmente)
+git push origin :refs/tags/0.1.0 (removendo tag no repositório remoto)
+
