@@ -1,2 +1,1 @@
-<?php  teste php ?>
-sdfasdf
+teste de segundo arquivo
