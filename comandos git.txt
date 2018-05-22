@@ -460,3 +460,32 @@ Agora se você quiser remover as tags criadas, utilize os comandos abaixo:
 git tag -d 0.1.0  (removendo tag localmente)
 git push origin :refs/tags/0.1.0 (removendo tag no repositório remoto)
 
+Qual o comando utilizado para criar um novo branch? git checkout -b nome-do-branch 
+
+Se você está no branch master e roda um merge de um outro branch, isso siginifica que: Todos os commits que existem no outro branch serão mesclados no branch master 
+
+Qual a principal diferença entre Merge e Rebase?  merge não reordena os commits e ainda muitas vezes gera um commit adicional para ser concluído. O rebase reordena os commits, não gerando assim um commit adicional. 
+
+Voltando ao estado original
+Vamos imaginar que você possui um arquivo no controle de versão chamado exemplo.php.
+
+Imagine agora que você fez diversas alterações nesse arquivo, porém, por qualquer motivo, você se arrependeu de fazê-las (lembrando que você apenas fez as alterações, mas não as commitou). Para você fazer o conteúdo do arquivo voltar ao estado original, digite:
+
+git checkout -- exemplo.php
+
+Rodando esse comando, todos as alterações realizadas serão perdidas e o arquivo voltará exatamente como estava antes.
+
+Esse recurso é extremamente útil, porém deve ser usado com cuidado
+
+Removendo branch remoto
+Dica para você!
+
+Quando um branch local é removido, isso não significa que o branch remoto também será.
+
+Nesse caso, há um comando específico para que possamos remover um branch remoto. Utilize o comando:
+
+git push origin :nome-do-branch
+
+Não se esqueça de testar. Ok?
+
+
